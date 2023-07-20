@@ -1,0 +1,97 @@
+﻿/*--------------------Top Bar----------------*/
+.top-bar {
+    padding: 2px 0;
+    background: #000000;
+}
+
+.top-bar .tb-contact p {
+    display: inline-block;
+    margin: 0;
+    color: rgba(8, 169, 33, 1);
+    font-size: 14px;
+}
+
+.top-bar .tb-contact p i {
+    margin-right: 6px;
+}
+
+.top-bar .tb-contact p:first-child {
+    margin-right: 15px;
+}
+
+.top-bar .tb-menu {
+    font-size: 0;
+    text-align: right;
+}
+
+.top-bar .tb-menu a {
+    color: rgba(8, 169, 33, 1);
+    font-size: 14px;
+    margin: 0 8px;
+}
+
+.top-bar .tb-menu a:hover {
+    color: #ffffff;
+}
+
+.top-bar .tb-menu a:last-child {
+    margin-right: 0;
+}
+
+.top-bar .tb-menu a::after {
+    position: absolute;
+    content: "/";
+    margin: 1px 0 0 6px;
+    color: rgba(8, 169, 33, 0.5);
+    font-size: 14px;
+}
+
+.top-bar .tb-menu a:last-child::after {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .top-bar .tb-contact,
+    .top-bar .tb-menu {
+        text-align: center;
+    }
+}
+
+
+
+
+/*----------------------topnav----------------------*/
+.topnav {
+    overflow: hidden;
+    background-color: rgba(8, 169, 33, 0.7);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    margin: 10px 17px 10px 17px;
+    z-index: 1;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #000000;
+    color: white;
+}
+
+.topnav .loginout {
+    float: right;
+    border: #000000;
+    background-color: none;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr-Tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="title" content="Techpart">
+    <meta name="title" content="Teknolojik parçalar">
+    <meta http-equiv="refresh" content="10">
+
+    <title>apartev.com</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/topnav.css" rel="stylesheet" />
+    <link href="../css/scrollbar.css" rel="stylesheet" />
+    <script src="../js/destek-js.js"></script>
+
+    <style>
+        body{
+        background-image: url("/final deneme1/images/supportbg.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        }
+
+        .support{
+            position: relative;
+            text-align: center;
+            color: whitesmoke;
+            margin-top: 3%;
+        }
+
+        .checkbox{
+            background-color: rgba(8, 169, 33, 0.8);
+            font-size: 200%;
+            border-radius: 100px;
+        }
+
+        h1{
+            color: black;
+            font-style: italic;
+        }
+        table tr{
+            background-color: rgba(10, 20, 30, 0.5);
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a href="Anasayfa.html">Anasayfa</a>
+        <a href="Hakkımızda.html">Hakkımızda</a>
+        <a href="Haberler.html">Haberler</a>
+        <a href="İletişim.html">İletişim</a>
+        <a class="active" href="Destek.html">Destek</a>
+    </div>
+
+    <div class="support">
+        <h1>Görüş ve Önerilerinizi Bizimle Paylaşın</h1>
+
+        <table BORDER CELLPADDING="10" align="center">
+            <tr>
+                <td><label for="Ad">Adınız:</label></td>
+                <td><input type="text" id="fname" name="fname"></td>
+            </tr>
+            <tr>
+                <td><label for="Soyad">Soyadınız:</label></td>
+                <td><input type="text" id="lname" name="lname"></td>
+            </tr>
+            <tr>
+                <td><label for="E-mail">E-mail:</label></td>
+                <td><input type="text" id="fname" name="fname"></td>
+            </tr>
+            <tr>
+                <td><label for="Görüş Öneri">Şikayet ve Önerileriniz:</label></td>
+                <td><input type="text" id="fname" name="fname"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="fgonder()" class="checkbox">Gönder</button></td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>

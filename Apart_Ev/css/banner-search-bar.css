@@ -1,0 +1,79 @@
+﻿/*-------------------banner-search-bar----------------------*/
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.container .search-main {
+    float: left;
+    background-color: #018454;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 25px;
+    margin-top: -40px;
+    margin-right: 6px;
+    position: relative;
+    left: 14%;
+    width: 500px;
+}
+
+.container .search-bar {
+    float: left;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    width: 0;
+    transition: 700ms;
+}
+
+.container .search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    float: right;
+    width: 10px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+.search-main:hover > .search-bar {
+    width: 470px;
+}
+
+.container .search-button:hover {
+    background: none;
+}
+
+.container .text0 h6 {
+    color: black !important;
+}
+
+.text0 {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: white;
+}
+
+/*------------------placeholder renk ayarı (searchbox içi yazı)----------------*/
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}

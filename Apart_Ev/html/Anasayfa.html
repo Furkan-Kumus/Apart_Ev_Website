@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="tr-Tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="title" content="Techpart">
+    <meta name="title" content="Teknolojik parçalar">
+    <meta http-equiv="refresh" content="100">
+
+    <title>apartev.com</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="../css/topnav.css" rel="stylesheet" />
+    <link href="../css/banner-search-bar.css" rel="stylesheet" />
+    <link href="../css/anasayfa-buton.css" rel="stylesheet" />
+    <link href="../css/anasayfa-kutu.css" rel="stylesheet" />
+    <link href="../css/footers.css" rel="stylesheet" />
+    <link href="../css/anasayfa-loginout.css" rel="stylesheet" />
+    <link href="../css/scrollbar.css" rel="stylesheet" />
+
+    <style>
+        .footer {
+            top: 80px;
+        }
+
+        .footer-bottom {
+            top: 100%;
+            height: 85%;
+            margin-bottom: 0.8%;
+        }
+
+            .footer-bottom .copyright {
+                padding-left: 17%;
+            }
+
+            .footer-bottom .template-by {
+                padding-right: 17%;
+                margin-top: -1%;
+            }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------ Top Bar Start -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="tb-contact">
+                        <p><i class="fas fa-envelope"></i>apartev@gmail.com</p>
+                        <p><i class="fas fa-phone-alt"></i>+90 536 xxx xx xx</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="tb-menu">
+                        <a>Bizi tercih ettiğiniz için teşekkürler..</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------ Top Bar Start -->
+
+    <header>
+        <div class="topnav">
+
+            <!--------------------------------------------------------------------------------------------------------------------- nav bar start -->
+            <a class="active" href="Anasayfa.html">Anasayfa</a>
+            <a href="Hakkımızda.html">Hakkımızda</a>
+            <a href="Haberler.html">Haberler</a>
+            <a href="İletişim.html">İletişim</a>
+            <a href="Destek.html">Destek</a>
+            <!----------------------------------------------------------------------------------------------------------------------------------------------------- nav bar end -->
+            <!-------------------------------------------------------------------------------------------------------------------------------------------- login n logout start -->
+            <div class="loginout">
+
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Giriş Yap</button>
+
+                <div id="id01" class="modal">
+
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <img src="/final deneme1/images/sign up.png" alt="Sign up" class="avatar">
+                        </div>
+
+                        <div class="logincontainer">
+                            <label for="uname"><b>Kullanıcı Adı</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label for="psw"><b>Şifre</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <button type="submit">Giriş Yap</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Beni Hatırla
+                            </label>
+                        </div>
+
+                        <div class="logincontainer" style="background-color: rgba(8, 169, 33, 0.9)">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Çıkış</button>
+                            <span class="psw"><a href="#">Şifremi Unuttum</a></span>
+                        </div>
+                    </form>
+                </div>
+
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('id01');
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+
+                <!------------------------------------------------------------------------------------------------------------------------------------------- login n logout mid -->
+
+                <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Üye Ol</button>
+
+                <div id="id02" class="modal">
+
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <img src="/final deneme1/images/sign up.png" alt="Log in" class="avatar">
+                        </div>
+
+                        <div class="logincontainer">
+                            <label for="psw"><b>Ad</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <label for="psw"><b>Soyad</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <label for="uname"><b>Kullanıcı Adı</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label for="psw"><b>Şifre</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <button type="submit">Üye Ol</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Beni Hatırla
+                            </label>
+                        </div>
+
+                        <div class="logincontainer" style="background-color:rgba(8, 169, 33, 0.9)">
+                            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Çıkış</button>
+                            <span class="psw"><a href="#">Şifremi Unuttum</a></span>
+                        </div>
+                    </form>
+                </div>
+
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('id01');
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+
+            </div>
+            <!-------------------------------------------------------------------------------------------------------------------------------------------- login n logout end -->
+
+        </div>
+    </header>
+
+
+    <section>
+
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------ banner start -->
+        <div class="container">
+            <img src="/final deneme1/images/banner1.jpg" alt="bannerfoto" style="width: 98%">
+            <div class="text0">
+                <h6>Apart Bulmanın Adresi Apartev.com</h6>
+                <div class="search-main">
+                    <input type="text" class="search-bar"  placeholder="Aradığınız bir şey mi var?">
+                    <a class="search-button">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="boxes">
+            <div class="center">
+                <ul>
+                    <li class="yıllık"><p class="text1">Sözleşmeli yıllık apartlar ve daha fazlası için..</p><br><a href="Yıllık.html" class="buttonapart button1">Yıllık Apartlar</a></li>
+                    <li class="aylık"><p class="text1">Sözleşmesiz aylık apartlar ve daha fazlası için..</p><a href="Aylık.html" class="buttonapart button2">Aylık Apartlar</a></li>
+                    <li class="gunluk"><p class="text1">Sözleşmesiz günlük apartlar ve daha fazlası için..</p><a href="Gunluk.html" class="buttonapart button3">Günlük Apartlar</a></li>
+                </ul>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------ banner end -->
+
+    </section>
+
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------ first footer start-->
+    <footer class="footer">
+
+        <div class="footer-left">
+            <img src="/final deneme1/images/logo.jpg" alt="logo">
+            <p>Bizi Sosyal Medyadan Takip Etmeyi Unutmayın...</p>
+            <div class="socials">
+                <a href="https://www.facebook.com/profile.php?id=100082090387085"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UC7bnJgSmFwV8J1iz3dbIAIA"><i class="fa fa-youtube"></i></a>
+                <a href="https://www.instagram.com/apartev10/"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/ApartEv"><i class="fa fa-twitter"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox?compose=CllgCJTLpWRrtpRvlHSvPZGrfvhkPQNZWsvJwpzMWslfvBxxcxPcvBWmBDNXbtkvXxpWcTRJPVB"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <ul class="footer-right">
+
+            <li>
+                <h3>Kampanyalar</h3>
+                <ul class="box">
+                    <li><a href="#">Arkadaşını getir 10% indirim kazan!</a></li>
+                    <br>
+                    <li><a href="#">Düşük peşinat fırsatından yararlanmak <br> için hemen üye ol!</a></li>
+                    <br>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Kaynaklar</h3>
+                <ul class="box">
+                    <li><a href="https://www.pexels.com/tr-tr/">pexels.com</a></li>
+                    <li><a href="https://www.w3schools.com">w3schools.com</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Yardım ve Destek</h3>
+                <ul class="box">
+                    <li><a href="#">Bize sosyal medya adreslerimizden ulaşabilirsiziz.</a></li>
+                    <br>
+                    <li><a href="#">Bulunduğun şehirden apart sahibiyle<br> görüşmek için discord adresimizi<br> ziyaret edebilirsin!</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Neden Apartev.com ?</h3>
+                <ul class="box">
+                    <li> <a>apartev.com güvenli ve hızlı bir şekilde konut ihtiyacını karşılamayı amaçlar daha fazlası için</a><a href="Hakkımızda.html" style="color: rgb(24, 232, 255);"> Hakkımızda </a><a>sayfasına bakabilirsiniz :)</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </footer>
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------ first footer end-->
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------ Footer Bottom Start -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    <p>Copyright &copy; <a href="">apartev.com</a>. Tüm Hakları Saklıdır</p>
+                </div>
+
+                <div class="col-md-6 template-by">
+                    <p>Designed by <a href="">apartev.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------ Footer Bottom End -->
+
+</body>
+</html>
